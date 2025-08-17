@@ -1,13 +1,19 @@
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
+import Navbar from "./components/Navbar";
+import Hero from "./components/hero";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
     return (
-        <div>
-            <h1 className="text-3xl text-red-500">Hello World</h1>
+       <main>
+        <Navbar />
+        <Hero />
+        <div className="h-dvh bg-black">
+
         </div>
+       </main>
     )
 }
 
